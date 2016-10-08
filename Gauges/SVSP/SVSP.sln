@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "__SVSP_AVIONICS", "AVIONICS\AVIONICS.vcproj", "{ADB90157-30E9-4A92-BE79-CFCA5C30F513}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "__SVSP_D3D9", "D3DX\D3D9\D3D9.vcproj", "{BAC8B545-8AA2-4103-918E-0E6DE2A90CDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADB90157-30E9-4A92-BE79-CFCA5C30F513}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ADB90157-30E9-4A92-BE79-CFCA5C30F513}.Debug|Win32.Build.0 = Debug|Win32
+		{ADB90157-30E9-4A92-BE79-CFCA5C30F513}.Release|Win32.ActiveCfg = Release|Win32
+		{ADB90157-30E9-4A92-BE79-CFCA5C30F513}.Release|Win32.Build.0 = Release|Win32
+		{BAC8B545-8AA2-4103-918E-0E6DE2A90CDF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAC8B545-8AA2-4103-918E-0E6DE2A90CDF}.Debug|Win32.Build.0 = Debug|Win32
+		{BAC8B545-8AA2-4103-918E-0E6DE2A90CDF}.Release|Win32.ActiveCfg = Release|Win32
+		{BAC8B545-8AA2-4103-918E-0E6DE2A90CDF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

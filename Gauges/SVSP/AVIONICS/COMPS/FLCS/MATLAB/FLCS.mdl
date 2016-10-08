@@ -1,0 +1,3161 @@
+Model {
+  Name			  "FLCS"
+  Version		  6.0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.104"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "ibm-5348_P100-1997"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu May 13 19:48:54 2010"
+  Creator		  "valery"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "root"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Mar 03 10:03:48 2011"
+  ModelVersionFormat	  "1.%<AutoIncrement:104>"
+  ConfigurationManager	  "None"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock off
+  BufferReuse		  on
+  ProdHWDeviceType	  "Motorola PowerPC"
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.0.4"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.0.4"
+	  StartTime		  "0.0"
+	  StopTime		  "2"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.0.4"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.0.4"
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  ConditionalExecOptimization "on_for_testing"
+	  InlineParams		  off
+	  InlineInvariantSignals  on
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  ParameterPooling	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  OptimizeModelRefInitCode on
+	  LifeSpan		  "1"
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.0.4"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterPrecisionLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.0.4"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "Motorola PowerPC"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.0.4"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Version		  "1.0.4"
+	  SystemTargetFile	  "mpc555rt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  TemplateMakefile	  "mpc555rt.tmf"
+	  Description		  "Embedded Target for Motorola MPC555 (real-t"
+"ime target)"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "mpc555rt_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Version		      "1.0.4"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      PrefixModelToSubsysFcnNames on
+	      CustomSymbolStr	      "$R$N$M"
+	      MangleLength	      1
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Version		      "1.0.4"
+	      TargetFcnLib	      "diab_tfl_tmw.mat"
+	      GenFloatMathFcnCalls    "ISO_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns on
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    on
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SystemTargetFile	      "mpc555rt.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.ERTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  11
+		  Version		  "1.0.4"
+		  TargetFcnLib		  "diab_tfl_tmw.mat"
+		  GenFloatMathFcnCalls	  "ISO_C"
+		  UtilityFuncGeneration	  "Auto"
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant off
+		  IncludeMdlTerminateFcn  on
+		  CombineOutputUpdateFcns on
+		  SuppressErrorStatus	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  on
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  off
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  GenerateErtSFunction	  off
+		  GenerateASAP2		  off
+		  ExtMode		  off
+		  ExtModeTransport	  0
+		  ExtModeStaticAlloc	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTesting	  off
+		  ExtModeMexFile	  "ext_comm"
+		  InlinedParameterPlacement "NonHierarchical"
+		  TargetOS		  "BareBoardExample"
+		  MultiInstanceErrorCode  "Error"
+		  RateGroupingCode	  on
+		  RootIOFormat		  "Individual Arguments"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  ERTSrcFileBannerTemplate "ert_code_template.cgt"
+		  ERTHdrFileBannerTemplate "ert_code_template.cgt"
+		  ERTDataSrcFileTemplate  "ert_code_template.cgt"
+		  ERTDataHdrFileTemplate  "ert_code_template.cgt"
+		  ERTCustomFileTemplate	  "example_file_process.tlc"
+		  InitialValueSource	  "Model"
+		  ModuleNamingRule	  "Unspecified"
+		  SignalDisplayLevel	  10
+		  ParamTuneLevel	  10
+		  GlobalDataDefinition	  "Auto"
+		  GlobalDataReference	  "Auto"
+		  GRTInterface		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__toolbox_rtw_targ"
+"ets_mpc555dk_mpc555dk_mpc555rt_MPC555_OPTIMIZATION_SWITCH"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "speed"
+		  Value			  1
+		  String		  "size"
+		  Value			  2
+		  String		  "debug"
+		  Value			  3
+		  String		  "custom"
+		}
+		Name			"MPC555_OPTIMIZATION_SWITCH"
+		Value			"speed"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"MPC555_OPTIMIZATION_FLAGS"
+		Value			"' -XO '"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__toolbox_rtw_targ"
+"ets_mpc555dk_mpc555dk_mpc555rt_TARGET_MEMORY_MODEL"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RAM"
+		  Value			  1
+		  String		  "FLASH"
+		}
+		Name			"TARGET_MEMORY_MODEL"
+		Value			"RAM"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType__toolbox_rtw_targ"
+"ets_mpc555dk_mpc555dk_mpc555rt_BuildAction"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "None"
+		  Value			  1
+		  String		  "Launch_Download_Control_Panel"
+		  Value			  2
+		  String		  "Run_via_BDM"
+		  Value			  3
+		  String		  "Debug_via_BDM"
+		}
+		Name			"BuildAction"
+		Value			"None"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"STATIC_RTWLIB"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"BaseRateMaxOverrunsValue"
+		Value			5
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"SubRateMaxOverrunsValue"
+		Value			0
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"ExecutionProfilingEnabled"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"ExecutionProfilingNumSamples"
+		Value			500
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      SimulationMode	      "normal"
+      CurrentDlgPage	      "Real-Time Workshop"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Clock
+      DisplayTime	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "sfix(16)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "2^0"
+      SampleTime	      "inf"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Fcn
+      Expr		      "sin(u[1])"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "sfix(16)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "2^0"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      MinMax
+      Function		      "min"
+      Inputs		      "1"
+      InputSameDT	      on
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      LogicOutDataTypeMode    "Logical (see Configuration Parameters: Optimiza"
+"tion)"
+      LogicDataType	      "uint(8)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      InputSameDT	      on
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "FLCS"
+    Location		    [165, 108, 1428, 1072]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    212
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "AoA"
+      Ports		      [1, 1]
+      Position		      [80, 326, 140, 354]
+      BackgroundColor	      "cyan"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "1"
+      gain		      "13.0552"
+      high		      "25"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C(AoA)"
+      Position		      [205, 275, 235, 305]
+      BackgroundColor	      "orange"
+      Value		      "0.03"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C(G)"
+      Position		      [205, 75, 235, 105]
+      BackgroundColor	      "orange"
+      Value		      "0.12"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C(MAX_AoA)"
+      Position		      [205, 225, 235, 255]
+      BackgroundColor	      "orange"
+      NamePlacement	      "alternate"
+      Value		      "27"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C(MAX_G)"
+      Position		      [205, 25, 235, 55]
+      BackgroundColor	      "orange"
+      Value		      "9"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C1"
+      Position		      [30, 125, 60, 155]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C2"
+      Position		      [30, 325, 60, 355]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C3"
+      Position		      [310, 175, 340, 205]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C4"
+      Position		      [310, 375, 340, 405]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C5"
+      Position		      [310, 640, 340, 670]
+      BackgroundColor	      "gray"
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C6"
+      Position		      [310, 690, 340, 720]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C7"
+      Position		      [310, 860, 340, 890]
+      BackgroundColor	      "gray"
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C8"
+      Position		      [310, 960, 340, 990]
+      BackgroundColor	      "gray"
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "C9"
+      Position		      [310, 1010, 340, 1040]
+      BackgroundColor	      "orange"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux1"
+      Ports		      [1, 3]
+      Position		      [210, 522, 215, 728]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "3"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"Pitch Input"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+	ShowSigGenPortName	on
+      }
+      Port {
+	PortNumber		2
+	Name			"Roll Input"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+	ShowSigGenPortName	on
+      }
+      Port {
+	PortNumber		3
+	Name			"Yaw Input"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+	ShowSigGenPortName	on
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux2"
+      Ports		      [1, 3]
+      Position		      [730, 521, 735, 739]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn3"
+      Position		      [80, 540, 140, 570]
+      Expr		      "u -1"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn4"
+      Position		      [80, 610, 140, 640]
+      Expr		      "u -1"
+    }
+    Block {
+      BlockType		      Fcn
+      Name		      "Fcn5"
+      Position		      [80, 680, 140, 710]
+      Expr		      "u -1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "G"
+      Ports		      [1, 1]
+      Position		      [80, 126, 140, 154]
+      BackgroundColor	      "cyan"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "0"
+      gain		      "4.7281"
+      high		      "9"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "K(AoA)1"
+      Position		      [310, 590, 340, 620]
+      BackgroundColor	      "orange"
+      Value		      "0.03"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "K(AoA)2"
+      Position		      [310, 910, 340, 940]
+      BackgroundColor	      "orange"
+      Value		      "0.03"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "K(G)1"
+      Position		      [310, 490, 340, 520]
+      BackgroundColor	      "orange"
+      Value		      "0.1"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "K(G)2"
+      Position		      [310, 810, 340, 840]
+      BackgroundColor	      "orange"
+      Value		      "0.1"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [3, 1]
+      Position		      [175, 522, 180, 728]
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux2"
+      Ports		      [3, 1]
+      Position		      [700, 521, 705, 739]
+      ShowName		      off
+      Inputs		      "3"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "P(A)1"
+      Ports		      [1, 1]
+      Position		      [360, 691, 420, 719]
+      BackgroundColor	      "orange"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "0"
+      gain		      "0.53917"
+      high		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "P(A)2"
+      Ports		      [1, 1]
+      Position		      [360, 1011, 420, 1039]
+      BackgroundColor	      "orange"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "0"
+      gain		      "0.60829"
+      high		      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Pitch Control Limiter"
+      Ports		      [9, 1]
+      Position		      [465, 24, 660, 456]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Pitch Control Limiter"
+	Location		[201, 118, 1302, 1098]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	212
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"94"
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(Maximal G) "
+	  Position		  [65, 33, 95, 47]
+	  BackgroundColor	  "orange"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(G)"
+	  Position		  [65, 113, 95, 127]
+	  BackgroundColor	  "orange"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "G"
+	  Position		  [65, 168, 95, 182]
+	  BackgroundColor	  "cyan"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(G-Lim Smooth Constant)"
+	  Position		  [65, 223, 95, 237]
+	  BackgroundColor	  "orange"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(Maximal AoA)"
+	  Position		  [65, 378, 95, 392]
+	  BackgroundColor	  "orange"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(AoA)"
+	  Position		  [65, 463, 95, 477]
+	  BackgroundColor	  "orange"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "AoA"
+	  Position		  [65, 518, 95, 532]
+	  BackgroundColor	  "cyan"
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(AoA-Lim Smooth Constant)"
+	  Position		  [65, 573, 95, 587]
+	  BackgroundColor	  "orange"
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Control Input"
+	  Position		  [65, 628, 95, 642]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "AoA-Limiter"
+	  Ports			  [4, 1]
+	  Position		  [495, 439, 630, 666]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "AoA-Limiter"
+	    Location		    [593, 342, 1500, 764]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(Tuning Constant)"
+	      Position		      [75, 43, 105, 57]
+	      BackgroundColor	      "orange"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Control Parameter"
+	      Position		      [75, 93, 105, 107]
+	      BackgroundColor	      "cyan"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(Signal Smooth Constant)"
+	      Position		      [75, 153, 105, 167]
+	      BackgroundColor	      "orange"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Input Signal"
+	      Position		      [75, 258, 105, 272]
+	      BackgroundColor	      "lightBlue"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "1 - C(Signal Smooth Constant)"
+	      Position		      [265, 344, 365, 376]
+	      Expr		      "1 - u"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      Ports		      [2, 1]
+	      Position		      [530, 247, 560, 278]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"Smoothed Signal"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+		ShowSigGenPortName	on
+	      }
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn6"
+	      Position		      [365, 60, 425, 90]
+	      Expr		      "1/(u^2 + 1)"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      Ports		      [2, 1]
+	      Position		      [620, 51, 650, 149]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      Ports		      [2, 1]
+	      Position		      [300, 26, 330, 124]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product5"
+	      Ports		      [2, 1]
+	      Position		      [435, 286, 465, 384]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product6"
+	      Ports		      [2, 1]
+	      Position		      [435, 136, 465, 234]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u"
+	      Position		      [265, 294, 365, 326]
+	      Expr		      "u"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u^3"
+	      Position		      [265, 194, 365, 226]
+	      Expr		      "u^3 "
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [675, 93, 705, 107]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Input Signal"
+	      SrcPort		      1
+	      Points		      [0, 0; 110, 0]
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"u"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"u^3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "C(Tuning Constant)"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Fcn6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C(Signal Smooth Constant)"
+	      SrcPort		      1
+	      Points		      [0, 0; 80, 0]
+	      Branch {
+		DstBlock		"Product6"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 200]
+		DstBlock		"1 - C(Signal Smooth Constant)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "u^3"
+	      SrcPort		      1
+	      DstBlock		      "Product6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product6"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 70]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product5"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -65]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1 - C(Signal Smooth Constant)"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Control Parameter"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Fcn6"
+	      SrcPort		      1
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Smoothed Signal"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -140]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Combined Control Limiter"
+	  Ports			  [6, 1]
+	  Position		  [495, 734, 630, 1026]
+	  BackgroundColor	  "yellow"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "Combined Control Limiter"
+	    Location		    [961, 567, 1612, 1117]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(G)"
+	      Position		      [30, 43, 60, 57]
+	      BackgroundColor	      "orange"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "G"
+	      Position		      [30, 93, 60, 107]
+	      BackgroundColor	      "cyan"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(AoA)"
+	      Position		      [30, 168, 60, 182]
+	      BackgroundColor	      "orange"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "AoA"
+	      Position		      [30, 218, 60, 232]
+	      BackgroundColor	      "cyan"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(A)"
+	      Position		      [30, 288, 60, 302]
+	      BackgroundColor	      "orange"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Control Input"
+	      Position		      [30, 393, 60, 407]
+	      BackgroundColor	      "lightBlue"
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "1 -P(A)"
+	      Position		      [140, 479, 240, 511]
+	      Expr		      "1 - u"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      Ports		      [2, 1]
+	      Position		      [405, 382, 435, 413]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn1"
+	      Position		      [240, 185, 300, 215]
+	      Expr		      "1/(u^2 + 1)"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn6"
+	      Position		      [240, 60, 300, 90]
+	      Expr		      "1/(u^2 + 1)"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [2, 1]
+	      Position		      [495, 211, 525, 309]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      Ports		      [2, 1]
+	      Position		      [410, 86, 440, 184]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      Ports		      [2, 1]
+	      Position		      [175, 26, 205, 124]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product4"
+	      Ports		      [2, 1]
+	      Position		      [175, 151, 205, 249]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product5"
+	      Ports		      [2, 1]
+	      Position		      [310, 421, 340, 519]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product6"
+	      Ports		      [2, 1]
+	      Position		      [310, 271, 340, 369]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u"
+	      Position		      [140, 429, 240, 461]
+	      Expr		      "u"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u^3"
+	      Position		      [140, 329, 240, 361]
+	      Expr		      "u^3 "
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Control Output"
+	      Position		      [575, 253, 605, 267]
+	      BackgroundColor	      "lightBlue"
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      DstBlock		      "Control Output"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Control Input"
+	      SrcPort		      1
+	      Points		      [0, 0; 40, 0]
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"u^3"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"u"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "C(G)"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Fcn6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product4"
+	      SrcPort		      1
+	      DstBlock		      "Fcn1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C(A)"
+	      SrcPort		      1
+	      Points		      [10, 0]
+	      Branch {
+		Points			[0, 200]
+		DstBlock		"1 -P(A)"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Product6"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "u^3"
+	      SrcPort		      1
+	      DstBlock		      "Product6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product6"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 70]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product5"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -65]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1 -P(A)"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "C(AoA)"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Product4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "AoA"
+	      SrcPort		      1
+	      Points		      [0, 0]
+	      DstBlock		      "Product4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "G"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Fcn6"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, 35]
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Fcn1"
+	      SrcPort		      1
+	      Points		      [45, 0; 0, -40]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -115]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 100]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  Ports			  [1, 3]
+	  Position		  [940, 490, 945, 590]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Outputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "G-Limiter"
+	  Ports			  [4, 1]
+	  Position		  [495, 89, 630, 316]
+	  BackgroundColor	  "lightBlue"
+	  TreatAsAtomicUnit	  off
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  System {
+	    Name		    "G-Limiter"
+	    Location		    [690, 99, 1459, 516]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(Tuning Constant)"
+	      Position		      [95, 43, 125, 57]
+	      BackgroundColor	      "orange"
+	      Port		      "1"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Control Parameter"
+	      Position		      [95, 93, 125, 107]
+	      BackgroundColor	      "cyan"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "C(Signal Smooth Constant)"
+	      Position		      [95, 153, 125, 167]
+	      BackgroundColor	      "orange"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Input Signal"
+	      Position		      [95, 258, 125, 272]
+	      BackgroundColor	      "lightBlue"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      LatchInput	      off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "1 - C(Signal Smooth Constant)"
+	      Position		      [285, 344, 385, 376]
+	      Expr		      "1 - u"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      Ports		      [2, 1]
+	      Position		      [550, 247, 580, 278]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      OutScaling	      "2^-10"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"Smoothed Signal"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+		ShowSigGenPortName	on
+	      }
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "Fcn6"
+	      Position		      [385, 60, 445, 90]
+	      Expr		      "1/(u^2 + 1)"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      Ports		      [2, 1]
+	      Position		      [640, 51, 670, 149]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      Ports		      [2, 1]
+	      Position		      [320, 26, 350, 124]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product5"
+	      Ports		      [2, 1]
+	      Position		      [455, 286, 485, 384]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product6"
+	      Ports		      [2, 1]
+	      Position		      [455, 136, 485, 234]
+	      InputSameDT	      off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u"
+	      Position		      [285, 294, 385, 326]
+	      Expr		      "u"
+	    }
+	    Block {
+	      BlockType		      Fcn
+	      Name		      "u^3"
+	      Position		      [285, 194, 385, 226]
+	      Expr		      "u^3 "
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [695, 93, 725, 107]
+	      IconDisplay	      "Port number"
+	      BusOutputAsStruct	      off
+	    }
+	    Line {
+	      SrcBlock		      "Input Signal"
+	      SrcPort		      1
+	      Points		      [0, 0; 110, 0]
+	      Branch {
+		Points			[0, 45]
+		DstBlock		"u"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"u^3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "C(Tuning Constant)"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Fcn6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C(Signal Smooth Constant)"
+	      SrcPort		      1
+	      Points		      [0, 0; 80, 0]
+	      Branch {
+		DstBlock		"Product6"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 200]
+		DstBlock		"1 - C(Signal Smooth Constant)"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "u^3"
+	      SrcPort		      1
+	      DstBlock		      "Product6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product6"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 70]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product5"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -65]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "1 - C(Signal Smooth Constant)"
+	      SrcPort		      1
+	      DstBlock		      "Product5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Control Parameter"
+	      SrcPort		      1
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Fcn6"
+	      SrcPort		      1
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "Smoothed Signal"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, -140]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  MinMax
+	  Name			  "Max Allowable Output"
+	  Ports			  [3, 1]
+	  Position		  [985, 489, 1015, 591]
+	  Function		  "max"
+	  Inputs		  "3"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [3, 1]
+	  Position		  [905, 490, 910, 590]
+	  ShowName		  off
+	  Inputs		  "3"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [755, 504, 785, 571]
+	  NamePlacement		  "alternate"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "AoA-Limiter Signal"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product8"
+	  Ports			  [2, 1]
+	  Position		  [755, 154, 785, 221]
+	  NamePlacement		  "alternate"
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "G-Limiter Signal"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	    ShowSigGenPortName	    on
+	  }
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  Position		  [670, 32, 700, 63]
+	  InputSameDT		  off
+	  LogicOutDataTypeMode	  "Boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator1"
+	  Position		  [675, 377, 705, 408]
+	  InputSameDT		  off
+	  LogicOutDataTypeMode	  "Boolean"
+	}
+	Block {
+	  BlockType		  Scope
+	  Name			  "Scope"
+	  Ports			  [1]
+	  Position		  [965, 314, 995, 346]
+	  Location		  [1112, 189, 1629, 475]
+	  Open			  off
+	  NumInputPorts		  "1"
+	  List {
+	    ListType		    AxesTitles
+	    axes1		    "%<SignalLabel>"
+	  }
+	  YMin			  "-1.1"
+	  YMax			  "1.1"
+	  DataFormat		  "StructureWithTime"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Output"
+	  Position		  [1070, 533, 1100, 547]
+	  BackgroundColor	  "lightBlue"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "C(Maximal G) "
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 120]
+	  DstBlock		  "Product8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "G-Limiter"
+	  SrcPort		  1
+	  DstBlock		  "Product8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "C(G)"
+	  SrcPort		  1
+	  Points		  [0, 0; 260, 0]
+	  Branch {
+	    DstBlock		    "G-Limiter"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 635]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "G"
+	  SrcPort		  1
+	  Points		  [0, 0; 215, 0]
+	  Branch {
+	    Points		    [90, 0]
+	    Branch {
+	      DstBlock		      "G-Limiter"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -120]
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 630]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "C(G-Lim Smooth Constant)"
+	  SrcPort		  1
+	  DstBlock		  "G-Limiter"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "C(AoA)"
+	  SrcPort		  1
+	  Points		  [0, 0; 170, 0]
+	  Branch {
+	    DstBlock		    "AoA-Limiter"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 385]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "C(AoA-Lim Smooth Constant)"
+	  SrcPort		  1
+	  Points		  [0, 0; 75, 0]
+	  Branch {
+	    DstBlock		    "AoA-Limiter"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 375]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "C(Maximal AoA)"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator1"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "AoA-Limiter"
+	  SrcPort		  1
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Control Input"
+	  SrcPort		  1
+	  Points		  [0, 0; 305, 0]
+	  Branch {
+	    DstBlock		    "AoA-Limiter"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, -350]
+	    DstBlock		    "G-Limiter"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, 370]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "Max Allowable Output"
+	  SrcPort		  1
+	  DstBlock		  "Control Output"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "AoA-Limiter Signal"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "G-Limiter Signal"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Product8"
+	  SrcPort		  1
+	  Points		  [85, 0; 0, 315]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Combined Control Limiter"
+	  SrcPort		  1
+	  Points		  [240, 0; 0, -305]
+	  DstBlock		  "Mux"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "AoA"
+	  SrcPort		  1
+	  Points		  [0, 0; 125, 0]
+	  Branch {
+	    Points		    [225, 0]
+	    Branch {
+	      DstBlock		      "AoA-Limiter"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -125]
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Points		    [0, 380]
+	    DstBlock		    "Combined Control Limiter"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  Points		  [0, 0; 10, 0]
+	  Branch {
+	    DstBlock		    "Demux"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -210]
+	    DstBlock		    "Scope"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Max Allowable Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Max Allowable Output"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "Max Allowable Output"
+	  DstPort		  3
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ramp"
+      Ports		      [0, 1]
+      Position		      [30, 540, 60, 570]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "simulink/Sources/Ramp"
+      SourceType	      "Ramp"
+      ShowPortLabels	      on
+      slope		      "1"
+      start		      "0"
+      X0		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ramp1"
+      Ports		      [0, 1]
+      Position		      [30, 610, 60, 640]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "simulink/Sources/Ramp"
+      SourceType	      "Ramp"
+      ShowPortLabels	      on
+      slope		      "1"
+      start		      "0"
+      X0		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Ramp2"
+      Ports		      [0, 1]
+      Position		      [30, 680, 60, 710]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "simulink/Sources/Ramp"
+      SourceType	      "Ramp"
+      ShowPortLabels	      on
+      slope		      "1"
+      start		      "0"
+      X0		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Roll Control Limiter"
+      Ports		      [6, 1]
+      Position		      [465, 484, 660, 776]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Roll Control Limiter"
+	Location		[174, 102, 825, 652]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(G)"
+	  Position		  [30, 43, 60, 57]
+	  BackgroundColor	  "orange"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "G"
+	  Position		  [30, 93, 60, 107]
+	  BackgroundColor	  "cyan"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(AoA)"
+	  Position		  [30, 168, 60, 182]
+	  BackgroundColor	  "orange"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "AoA"
+	  Position		  [30, 218, 60, 232]
+	  BackgroundColor	  "cyan"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(A)"
+	  Position		  [30, 288, 60, 302]
+	  BackgroundColor	  "orange"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Control Input"
+	  Position		  [30, 393, 60, 407]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "1 -P(A)"
+	  Position		  [140, 479, 240, 511]
+	  Expr			  "1 - u"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  Ports			  [2, 1]
+	  Position		  [405, 382, 435, 413]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutScaling		  "2^-10"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn1"
+	  Position		  [240, 185, 300, 215]
+	  Expr			  "1/(u^2 + 1)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn6"
+	  Position		  [240, 60, 300, 90]
+	  Expr			  "1/(u^2 + 1)"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [495, 211, 525, 309]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [410, 86, 440, 184]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  Ports			  [2, 1]
+	  Position		  [175, 26, 205, 124]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  Ports			  [2, 1]
+	  Position		  [175, 151, 205, 249]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product5"
+	  Ports			  [2, 1]
+	  Position		  [310, 421, 340, 519]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  Ports			  [2, 1]
+	  Position		  [310, 271, 340, 369]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "u"
+	  Position		  [140, 429, 240, 461]
+	  Expr			  "u"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "u^3"
+	  Position		  [140, 329, 240, 361]
+	  Expr			  "u^3 "
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Output"
+	  Position		  [575, 253, 605, 267]
+	  BackgroundColor	  "lightBlue"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Control Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Control Input"
+	  SrcPort		  1
+	  Points		  [0, 0; 40, 0]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "u^3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "u"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "C(G)"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  DstBlock		  "Fcn6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  DstBlock		  "Fcn1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "C(A)"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, 200]
+	    DstBlock		    "1 -P(A)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Product6"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "u^3"
+	  SrcPort		  1
+	  DstBlock		  "Product6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 70]
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product5"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -65]
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "u"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1 -P(A)"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "C(AoA)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "AoA"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "G"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Fcn6"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 35]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Fcn1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -40]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -115]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 100]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      Ports		      [4]
+      Position		      [800, 525, 845, 805]
+      Location		      [1622, 77, 1886, 995]
+      Open		      on
+      NumInputPorts	      "4"
+      List {
+	ListType		AxesTitles
+	axes1			"Pitch Output Signal"
+	axes2			"Roll Output Signal"
+	axes3			"Yaw Output Signal"
+	axes4			"%<SignalLabel>"
+      }
+      YMin		      "-1.2~-1.2~-1.2~-1.1"
+      YMax		      "1.2~1.2~1.2~1.1"
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Smooth Factor"
+      Ports		      [1, 1]
+      Position		      [360, 176, 420, 204]
+      BackgroundColor	      "orange"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "0"
+      gain		      "0.90323"
+      high		      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Smooth Factor1"
+      Ports		      [1, 1]
+      Position		      [360, 376, 420, 404]
+      BackgroundColor	      "orange"
+      SourceBlock	      "simulink/Math\nOperations/Slider\nGain"
+      SourceType	      "Slider Gain"
+      ShowPortLabels	      on
+      low		      "0"
+      gain		      "0.90323"
+      high		      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Yaw Control Limiter"
+      Ports		      [6, 1]
+      Position		      [465, 804, 660, 1096]
+      BackgroundColor	      "yellow"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Auto"
+      System {
+	Name			"Yaw Control Limiter"
+	Location		[773, 138, 1407, 654]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(G)"
+	  Position		  [30, 43, 60, 57]
+	  BackgroundColor	  "orange"
+	  Port			  "1"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "G"
+	  Position		  [30, 93, 60, 107]
+	  BackgroundColor	  "cyan"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(AoA)"
+	  Position		  [30, 168, 60, 182]
+	  BackgroundColor	  "orange"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "AoA"
+	  Position		  [30, 218, 60, 232]
+	  BackgroundColor	  "cyan"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "C(A)"
+	  Position		  [30, 288, 60, 302]
+	  BackgroundColor	  "orange"
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Control Input"
+	  Position		  [30, 393, 60, 407]
+	  BackgroundColor	  "lightBlue"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  LatchInput		  off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "1 -P(A)"
+	  Position		  [140, 479, 240, 511]
+	  Expr			  "1 - u"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Add"
+	  Ports			  [2, 1]
+	  Position		  [405, 382, 435, 413]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  OutScaling		  "2^-10"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn1"
+	  Position		  [240, 185, 300, 215]
+	  Expr			  "1/(u^2 + 1)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn6"
+	  Position		  [240, 60, 300, 90]
+	  Expr			  "1/(u^2 + 1)"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product1"
+	  Ports			  [2, 1]
+	  Position		  [495, 211, 525, 309]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product2"
+	  Ports			  [2, 1]
+	  Position		  [410, 86, 440, 184]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product3"
+	  Ports			  [2, 1]
+	  Position		  [175, 26, 205, 124]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product4"
+	  Ports			  [2, 1]
+	  Position		  [175, 151, 205, 249]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product5"
+	  Ports			  [2, 1]
+	  Position		  [310, 421, 340, 519]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Product6"
+	  Ports			  [2, 1]
+	  Position		  [310, 271, 340, 369]
+	  InputSameDT		  off
+	  OutDataTypeMode	  "Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "u"
+	  Position		  [140, 429, 240, 461]
+	  Expr			  "u"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "u^3"
+	  Position		  [140, 329, 240, 361]
+	  Expr			  "u^3 "
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Control Output"
+	  Position		  [575, 253, 605, 267]
+	  BackgroundColor	  "lightBlue"
+	  IconDisplay		  "Port number"
+	  BusOutputAsStruct	  off
+	}
+	Line {
+	  SrcBlock		  "Product1"
+	  SrcPort		  1
+	  DstBlock		  "Control Output"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Control Input"
+	  SrcPort		  1
+	  Points		  [0, 0; 40, 0]
+	  Branch {
+	    Points		    [0, -55]
+	    DstBlock		    "u^3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 45]
+	    DstBlock		    "u"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "C(G)"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product3"
+	  SrcPort		  1
+	  DstBlock		  "Fcn6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product4"
+	  SrcPort		  1
+	  DstBlock		  "Fcn1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "C(A)"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Points		    [0, 200]
+	    DstBlock		    "1 -P(A)"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Product6"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "u^3"
+	  SrcPort		  1
+	  DstBlock		  "Product6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product6"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 70]
+	  DstBlock		  "Add"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Product5"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -65]
+	  DstBlock		  "Add"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "u"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "1 -P(A)"
+	  SrcPort		  1
+	  DstBlock		  "Product5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "C(AoA)"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Product4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "AoA"
+	  SrcPort		  1
+	  Points		  [0, 0]
+	  DstBlock		  "Product4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "G"
+	  SrcPort		  1
+	  DstBlock		  "Product3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Fcn6"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, 35]
+	  DstBlock		  "Product2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Fcn1"
+	  SrcPort		  1
+	  Points		  [45, 0; 0, -40]
+	  DstBlock		  "Product2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Add"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -115]
+	  DstBlock		  "Product1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Product2"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, 100]
+	  DstBlock		  "Product1"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Ramp"
+      SrcPort		      1
+      DstBlock		      "Fcn3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ramp1"
+      SrcPort		      1
+      DstBlock		      "Fcn4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ramp2"
+      SrcPort		      1
+      DstBlock		      "Fcn5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Demux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fcn3"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Fcn4"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Fcn5"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "C1"
+      SrcPort		      1
+      DstBlock		      "G"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "G"
+      SrcPort		      1
+      Points		      [0, 0; 130, 0]
+      Branch {
+	DstBlock		"Pitch Control Limiter"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 415]
+	DstBlock		"Roll Control Limiter"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "C2"
+      SrcPort		      1
+      DstBlock		      "AoA"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "C(G)"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux2"
+      SrcPort		      1
+      Points		      [0, 0; 5, 0]
+      Branch {
+	DstBlock		"Demux2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 140]
+	DstBlock		"Scope1"
+	DstPort			4
+      }
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      3
+      DstBlock		      "Scope1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      2
+      DstBlock		      "Scope1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Demux2"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Pitch Input"
+      Labels		      [-1, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      1
+      Points		      [10, 0; 0, -115]
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "Pitch Control Limiter"
+      SrcPort		      1
+      Points		      [15, 0; 0, 320]
+      DstBlock		      "Mux2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "C3"
+      SrcPort		      1
+      DstBlock		      "Smooth Factor"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Smooth Factor"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "K(G)1"
+      SrcPort		      1
+      DstBlock		      "Roll Control Limiter"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "K(AoA)1"
+      SrcPort		      1
+      DstBlock		      "Roll Control Limiter"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "C6"
+      SrcPort		      1
+      DstBlock		      "P(A)1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "P(A)1"
+      SrcPort		      1
+      DstBlock		      "Roll Control Limiter"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Roll Control Limiter"
+      SrcPort		      1
+      DstBlock		      "Mux2"
+      DstPort		      2
+    }
+    Line {
+      Name		      "Roll Input"
+      Labels		      [0, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      2
+      Points		      [60, 0; 0, 130]
+      DstBlock		      "Roll Control Limiter"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "C7"
+      SrcPort		      1
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "C8"
+      SrcPort		      1
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "K(G)2"
+      SrcPort		      1
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "K(AoA)2"
+      SrcPort		      1
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "C9"
+      SrcPort		      1
+      DstBlock		      "P(A)2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "P(A)2"
+      SrcPort		      1
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Yaw Control Limiter"
+      SrcPort		      1
+      Points		      [15, 0; 0, -250]
+      DstBlock		      "Mux2"
+      DstPort		      3
+    }
+    Line {
+      Name		      "Yaw Input"
+      Labels		      [0, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      3
+      Points		      [10, 0; 0, 380]
+      DstBlock		      "Yaw Control Limiter"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "C5"
+      SrcPort		      1
+      DstBlock		      "Roll Control Limiter"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "C(MAX_G)"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "AoA"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "C4"
+      SrcPort		      1
+      DstBlock		      "Smooth Factor1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Smooth Factor1"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "C(AoA)"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "C(MAX_AoA)"
+      SrcPort		      1
+      DstBlock		      "Pitch Control Limiter"
+      DstPort		      5
+    }
+  }
+}
+
+# Finite State Machines
+#
+#    Stateflow Version 6.0 (R14) dated Apr 30 2004, 06:19:14
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"FLCS"
+		created              		"16-Sep-2010 14:44:11"
+		isLibrary            		0
+		firstTarget          		2
+		sfVersion            		60014000.000006
+	}
+
+	target {
+		id               		2
+		name             		"sfun"
+		description      		"Default Simulink S-Function Target."
+		machine          		1
+		linkNode         		[1 0 0]
+	}
+}

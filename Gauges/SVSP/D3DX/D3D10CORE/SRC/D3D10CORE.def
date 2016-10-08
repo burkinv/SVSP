@@ -1,0 +1,6 @@
+LIBRARY       d3d10core
+EXPORTS
+  OpenAdapter10
+  D3D10CoreCreateDevice
+  D3D10CoreGetVersion
+  D3D10CoreRegisterLayers

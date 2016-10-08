@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<FSData
+  version="9.0"
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation="bglcomp.xsd" >
+  <!-- Facility and scenery data goes here -->
+  <SceneryObject lat="N21 12.58" lon="W158 16.79" alt="0.0" altitudeIsAgl="TRUE" pitch="0" bank="0" heading="262" imageComplexity="NORMAL">
+    <LibraryObject name="{26986b25-dbd2-460f-bf42-ae9c540ff1c6}" scale="1.0"/>
+  </SceneryObject>
+  <!-- Model data goes here -->
+  <ModelData sourceFile="..\model\VEH_CVN-76.MDL" />
+</FSData>

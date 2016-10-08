@@ -1,0 +1,38 @@
+<MissionConfig name="TECH_DEMO_MISSION">
+  <!--CARRIER SECTION-->
+  <CarrierList>
+    <Carrier name="VEH_CVN-76" lat_min="21.15" lat_max ="21.25" lon_min="-158.1" lon_max="-158.3" alt="0.0" pitch="0.0" hdg ="270.0" roll="0.0" aquisition_range="125000"/>
+  </CarrierList>
+  
+  <!--WAYPOINT LIST SECTION-->
+  <WaypointList>
+    <Waypoint name="PHJR"  lat="21.301900" lon="-158.068800"  alt="33.0"    hdg ="044"/>
+    <Waypoint name="SP_01" lat="21.326580" lon="-158.023612"  alt="3500.0"  hdg ="000"/>
+    <Waypoint name="SP_02" lat="21.251863" lon="-157.914685"  alt="8000.0"  hdg ="000"/>
+    <Waypoint name="SP_03" lat="21.077660" lon="-158.120017"  alt="5000.0"  hdg ="320"/>
+    <Waypoint name="SP_04" lat="21.224391" lon="-158.173606"  alt="1500.0"  hdg ="044"/>
+    <Waypoint name="PHJR"  lat="21.301900" lon="-158.068800"  alt="33.0"    hdg ="044"/>
+  </WaypointList>
+
+  <!--TARGET LIST SECTION-->
+  <!--<TargetList>
+    <Target name="VEH_destroyer01" lat_min="21.10" lat_max ="21.15" lon_min="-158.1" lon_max="-158.0" alt="0.0" pitch="0.0" hdg ="270.0" roll="0.0" aquisition_range="25000"/>
+  </TargetList>-->
+  
+  <!--WINGMAN SECTION-->
+  <WingmanList>
+    <Wingman name="TECH_DEMO_02 /01" />
+  </WingmanList>
+
+  <!--WEAPON SECTION--> <!-- (!) z="LONGITUDINAL" x="LATERAL" y="VERTICAL" (!) -->
+  <WeaponList>
+    <!--Internal Weapon Bay (Left)-->
+    <Pilon         station_id="3"  unit_id="0"  name="GP_4">
+      <Launcher    station_id="3"  unit_id="1"  name="LAU-130/A">
+        <Missile   station_id="3"  unit_id="2"  name="AGM /01"  type="AGM" weight="790" z="1.5" x="-1.5" y="-0.2" pitch="0.0" yaw="0.0" roll=" 45.0"/>
+      </Launcher>
+    </Pilon>
+    <!--
+    -->
+  </WeaponList>
+</MissionConfig>
