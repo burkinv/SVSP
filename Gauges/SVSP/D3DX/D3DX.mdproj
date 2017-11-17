@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ItemType>GenericProject</ItemType>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B0C9344-8665-420D-83B6-2F92893811A5}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Default|AnyCPU' ">
+    <OutputPath>.\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="D3DX.mdproj" />
+    <None Include="D3D10\D3D10.vcproj" />
+    <None Include="D3D10\SRC\_SVSP_D3D10.cpp" />
+    <None Include="D3D10\SRC\_SVSP_D3D10.def" />
+    <None Include="D3D10CORE\D3D10CORE.vcproj" />
+    <None Include="D3D10CORE\SRC\D3D10CORE.cpp" />
+    <None Include="D3D10CORE\SRC\D3D10CORE.def" />
+    <None Include="D3D9\.DS_Store" />
+    <None Include="D3D9\D3D9.vcproj" />
+    <None Include="D3D9\SRC\__SVSPD3D9.cpp" />
+    <None Include="D3D9\SRC\__SVSPD3D9.def" />
+    <None Include="D3D9\SRC\__SVSPD3D9.h" />
+    <None Include="D3D9\SRC\__SVSPDebug.cpp" />
+    <None Include="D3D9\SRC\__SVSPDebug.h" />
+    <None Include="DXGI\DXGI.vcproj" />
+    <None Include="DXGI\SRC\DXGI.cpp" />
+    <None Include="DXGI\SRC\DXGI.def" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{52A6A814-7F15-409E-A424-72D2CBC9D22C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="D3DX/D3D9/SRC/__SVSPD3D9.cpp">
+    <Files>
+      <File FileName="D3DX/D3D9/SRC/__SVSPD3D9.cpp" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AVIONICS PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|Win32" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
